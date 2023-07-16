@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;300;200&display=swap');
+
+:root {
+    font-family: "Poppins", "Trebuchet MS", Helvetica, sans-serif;
+    background-color: rgb(243, 243, 226);
+    font-weight: 400;
+}
+
+h1.name {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+a:visited {
+    color: black;
+}
+
+.section-text {
+    font-weight: 200;
+    font-size: 1.1rem;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+}
+
+section.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
