@@ -9,6 +9,7 @@
 h1.name {
     text-align: center;
     font-size: 1.7rem;
+    text-anchor: middle;
 }
 
 a:visited {
@@ -27,4 +28,39 @@ section.top-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+}
+
+section.wide-sections {
+    visibility: visible;
+}
+
+.hamburger-menu {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    section.wide-sections {
+        visibility: hidden;
+    }
+    
+    .hamburger-menu {
+        visibility: visible;
+        position: absolute;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; */
+    background-color: #101010;
 }
