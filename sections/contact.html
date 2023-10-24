@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
+    <section class = 'top-header'>
+        <h1 class = 'name'>So Hirota</h1>
+        <section class = 'wide-sections'>
+            <a class = 'section-text' style = 'left: 50px' href = 'aboutme.html'>about me</a>
+            <a class = 'section-text' style = 'left: 150px' href = 'projects.html'>projects</a>
+            <a class = 'section-text' style = 'right: 150px' href = 'astrophotography.html'>astrophotography</a>
+            <a class = 'section-text' style = 'right: 50px' href = 'contact.html'>contact</a>
+        </section>
+        <button class = 'hamburger-menu' onclick = 'expand_menu()'>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </section>
+    <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="close_menu()">&times;</a>
+        <div class="overlay-content">
+            <a href="aboutme.html">about me</a>
+            <a href="projects.html">projects</a>
+            <a href="astrophotgraphy.html">astrophotography</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
 <text>contact</text>
     
 </body>
