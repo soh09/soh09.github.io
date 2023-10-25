@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;300;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Konkhmer+Sleokchher&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     font-family: "Poppins", "Trebuchet MS", Helvetica, sans-serif;
@@ -6,10 +6,12 @@
     font-weight: 400;
 }
 
-h1.name {
+a.name {
     text-align: center;
     font-size: 1.7rem;
     text-anchor: middle;
+    text-decoration: none;
+    margin-top: 15px;
 }
 
 a:visited {
@@ -41,19 +43,6 @@ section.wide-sections {
     right: 20px;
 }
 
-@media screen and (max-width: 750px) {
-    section.wide-sections {
-        visibility: hidden;
-    }
-    
-    .hamburger-menu {
-        visibility: visible;
-        position: absolute;
-        right: 20px;
-        background-color: transparent;
-        border: none;
-    }
-}
 
 .bar {
     display: block;
@@ -108,10 +97,26 @@ section.wide-sections {
 
 
 .intro {
-    margin-top: 30px;
+    margin-top: 5%;
     padding-left: 100px;
     padding-right: 100px;
     animation: fadeIn 2s;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.img-container{
+    /* justify-content: center; */
+    width: 60%;
+}
+
+.text-container{
+    /* justify-content: center; */
+    width: 40%;
 }
 
 
@@ -122,23 +127,25 @@ section.wide-sections {
 
 h1.title-text {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.8vw;
     text-anchor: middle;
-    font-weight: 200;
+    font-weight: 400;
     white-space: pre-line;
+    line-height: 1.5em;
+}
+
+span.grey {
+    color: grey;
 }
 
 img#intro-image {
-    /* max-height:60%; */
-    /* max-width:auto; */
-    margin-right: auto;
+    max-width:70%;
+    border-radius: 3%;
     margin-left: auto;
+    margin-right: auto;
     display: block;
-    border-radius: 2%;
-    /* max-width: 700px; */
-    text-align: center;
 }
-
+/* 
 @media screen and (max-width: 1200px) {
     img#intro-image {
         max-width: 75%;
@@ -153,9 +160,13 @@ img#intro-image {
 
 @media screen and (min-width: 1200px) {
     img#intro-image {
-        max-width: 750px; /* Set an upper limit to the width */
+        max-width: 750px;
     }
-}
+
+    hr {
+        max-width: 850px;
+    }
+} */
 
 hr {
     width: 80%;
@@ -171,5 +182,41 @@ hr {
     }
     hr {
         width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    section.wide-sections {
+        visibility: hidden;
+    }
+    
+    .hamburger-menu {
+        visibility: visible;
+        position: absolute;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .text-container{
+        margin-top: 20px;
+        width: 60%;
+    }
+    h1.title-text {
+        font-size: 3.0vw;;
     }
 }

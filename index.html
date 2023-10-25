@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class = 'top-header'>
-        <h1 class = 'name'>So Hirota</h1>
+        <a class = 'name' href = "index.html">So Hirota</h1>
         <section class = 'wide-sections'>
             <a class = 'section-text' style = 'left: 50px' href = 'sections/aboutme.html'>about me</a>
             <a class = 'section-text' style = 'left: 150px' href = 'sections/projects.html'>projects</a>
@@ -31,9 +31,18 @@
             <a href="sections/contact.html">contact</a>
         </div>
     </div>
+
     <section class = "intro">
-        <h1 class = 'title-text'>I am a data scientist, space nerd, student, astrophotographer, tech enthusiast.<br>I look down at my book during the day, and look up at the sky during the night.</h1>
-        <img id = "intro-image" src = "assets/intro-image-2.jpg"> 
+        <div class="container">
+            <div class = "img-container">
+                <img id = 'intro-image' src="assets/earthrise.jpeg">
+            </div>
+            <div class = "text-container">
+                <h1 class = 'title-text'>I am a data scientist, space nerd, student, astrophotographer, tech enthusiast.<br>I look down at my book during the day, and look up to the sky during the night.<br>One day, I hope to set afoot on our companion, <span class = 'grey'>Moon.</span></h1>
+            </div>
+        </div>
+        
+        <!-- <img id = "intro-image" src = "assets/intro-image-2.jpg">  -->
     </section>
 
     <hr/>
