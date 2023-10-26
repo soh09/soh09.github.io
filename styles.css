@@ -116,7 +116,8 @@ section.wide-sections {
 
 .text-container{
     /* justify-content: center; */
-    width: 40%;
+    width: 45%;
+    margin-right: 8%;
 }
 
 
@@ -127,7 +128,7 @@ section.wide-sections {
 
 h1.title-text {
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     text-anchor: middle;
     font-weight: 400;
     white-space: pre-line;
@@ -172,7 +173,7 @@ hr {
     width: 80%;
     color: black;
     size: 0.5px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -215,8 +216,9 @@ hr {
     .text-container{
         margin-top: 20px;
         width: 60%;
+        margin-right: 0%;
     }
     h1.title-text {
-        font-size: 3.0vw;;
+        font-size: 4.0vw;;
     }
 }
