@@ -12,6 +12,7 @@ a.name {
     text-anchor: middle;
     text-decoration: none;
     margin-top: 15px;
+    color: black;
 }
 
 a:visited {
@@ -139,6 +140,14 @@ span.grey {
     color: grey;
 }
 
+span.day {
+    color: rgb(255, 157, 0);
+}
+
+span.night {
+    color: rgb(0, 124, 124);
+}
+
 img#intro-image {
     max-width:70%;
     border-radius: 3%;
@@ -215,10 +224,10 @@ hr {
     }
     .text-container{
         margin-top: 20px;
-        width: 60%;
+        width: 70%;
         margin-right: 0%;
     }
     h1.title-text {
-        font-size: 4.0vw;;
+        font-size: 5.5vw;;
     }
 }
