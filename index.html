@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <script src = 'script.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <section class = 'top-header'>
@@ -33,18 +34,50 @@
     </div>
 
     <section class = "intro">
-        <div class="container">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000">
+            <div class = "left-text-container">
+                <h1 class = 'title-text'>I am a data scientist, space nerd, student, astrophotographer, tech enthusiast.<br>By <span class = 'day'>day</span>, I delve into my books;<br>by <span class = 'night'>night</span>, I gaze up at the stars.<br>One day, I hope to set afoot on our companion, <span class = 'grey'>the Moon.</span></h1>
+            </div>
             <div class = "img-container">
                 <img id = 'intro-image' src="assets/earthrise.jpeg">
             </div>
-            <div class = "text-container">
-                <h1 class = 'title-text'>I am a data scientist, space nerd, student, astrophotographer, tech enthusiast.<br>By <span class = 'day'>day</span>, I delve into my books;<br>by <span class = 'night'>night</span>, I gaze up at the stars.<br>One day, I hope to set afoot on our companion, <span class = 'grey'>the Moon.</span></h1>
+        </div>
+    </section>
+    <hr/>
+
+    <!-- team player and show glove pic -->
+
+    <section class = "hp-subsections" id = "projects">
+
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000">
+            <div class = "img-container">
+                <a href = "sections/projects.html"><img id = 'intro-image' src="assets/glove-image.JPG"></a>
+            </div>
+            <div class = "right-text-container">
+                <a href = "sections/projects.html"><h1 class = 'text-container-title'>projects</h1></a>
+                <h1 class = 'title-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h1>
             </div>
         </div>
-        
-        <!-- <img id = "intro-image" src = "assets/intro-image-2.jpg">  -->
     </section>
-
     <hr/>
+
+    <section class = "hp-subsections" id = "aboutme">
+
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000">
+            <div class = "left-text-container">
+                <a href = "sections/aboutme.html"><h1 class = 'text-container-title'>about me</h1></a>
+                <h1 class = 'title-text'>My name is So Hirota.<br>I'm a student at the<br>University of California - San Diego, majoring in Data Science. <br>Learn more about me.</h1>
+            </div>
+            <div class = "img-container">
+                <a href = "sections/aboutme.html"><img id = 'intro-image' src="assets/about-me-image.JPG"></a>
+            </div>
+        </div>
+    </section>
+    <hr/>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -27,6 +27,16 @@ a:visited {
     color: black;
 }
 
+.text-container-title {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.0vw;
+    text-anchor: middle;
+    text-decoration: none;
+    /* margin-top: 15px; */
+    color: black;
+}
+
 section.top-header {
     display: flex;
     justify-content: center;
@@ -101,13 +111,29 @@ section.wide-sections {
     margin-top: 5%;
     padding-left: 100px;
     padding-right: 100px;
-    animation: fadeIn 2s;
+    /* animation: fadeIn 2s; */
+}
+
+.hp-subsections {
+    margin-top: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* animation: fadeIn 2s; */
+}
+
+.hp-subsections#projects {
+    /* animation-delay: 2s; */
+}
+
+.hp-subsections#aboutme {
+    /* animation-delay: 4s; */
 }
 
 .container {
     align-items: center;
     justify-content: center;
     display: flex;
+
 }
 
 .img-container{
@@ -115,10 +141,16 @@ section.wide-sections {
     width: 60%;
 }
 
-.text-container{
+.right-text-container{
     /* justify-content: center; */
     width: 45%;
     margin-right: 8%;
+}
+
+.left-text-container{
+    /* justify-content: center; */
+    width: 45%;
+    margin-left: 8%;
 }
 
 
@@ -137,7 +169,7 @@ h1.title-text {
 }
 
 span.grey {
-    color: grey;
+    color: #a9a9a9;
 }
 
 span.day {
@@ -155,34 +187,13 @@ img#intro-image {
     margin-right: auto;
     display: block;
 }
-/* 
-@media screen and (max-width: 1200px) {
-    img#intro-image {
-        max-width: 75%;
-    }
-}
 
-@media screen and (max-width: 1000px) {
-    img#intro-image {
-        max-width: 100%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    img#intro-image {
-        max-width: 750px;
-    }
-
-    hr {
-        max-width: 850px;
-    }
-} */
 
 hr {
     width: 80%;
     color: black;
     size: 0.5px;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 @media screen and (max-width: 600px) {
@@ -219,15 +230,30 @@ hr {
         padding-left: 0px;
         padding-right: 0px;
     }
+
+    .hp-subsections {
+        margin-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .img-container {
         width: 100%;
     }
-    .text-container{
+    .right-text-container{
         margin-top: 20px;
         width: 70%;
         margin-right: 0%;
     }
+
+    .left-text-container{
+        margin-top: 20px;
+        width: 70%;
+        margin-left: 0%;
+    }
     h1.title-text {
-        font-size: 5.5vw;;
+        font-size: 5.5vw;
+    }
+    .text-container-title {
+        font-size: 7.0vw;;
     }
 }
