@@ -196,6 +196,15 @@ hr {
     margin-top: 90px;
 }
 
+.logo-container {
+    margin-left: 45%;
+}
+
+.logo-container img{
+    max-height: 30px;
+    width: auto;
+}
+
 @media screen and (max-width: 600px) {
     .intro {
         padding-left: 7%;
