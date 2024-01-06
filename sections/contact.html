@@ -38,10 +38,37 @@
                 <h1 class = 'title-text'>You may reach out to me via this form, which will send me an email. You can also connect with me via LinkedIn. I look forward to hearing from you!</h1>
                 <div class = 'logo-container'>
                     <a href = 'https://www.linkedin.com/in/so-hirota/' target = '_blank'><img class = 'logos' src = '../assets/linkedin-logo.svg'></a>
+                    <a href = 'https://www.github.com/soh09/' target = '_blank'><img class = 'logos' src = '../assets/github-logo.svg'></a>
+                    <a href = 'https://www.instagram.com/back.yard.astro/' target = '_blank'><img class = 'logos' src = '../assets/ig-logo.svg'></a>
                 </div>
             </div>
             <div class = "img-container">
-                <a href = "sections/aboutme.html"><img id = 'intro-image' src="assets/about-me-image.JPG"></a>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyqavkr" method="post">
+                    <fieldset class = "email-form" id="fs-frm-inputs">
+                        <div class = "form-element-div">
+                            <div class = "form">
+                                <label for="full-name">Full Name</label>
+                                <br>
+                                <input type="text" name="name" id="full-name" placeholder="First and Last" required>
+                                <br>
+                            </div>
+                            <div class = "form">
+                                <label for="email-address">Email Address</label>
+                                <br>
+                                <input type="email" name="_replyto" id="email-address" placeholder="you@email.com" required>
+                            </div>
+                        </div>
+                        <div class = "form-element-div">
+                            <label for="message">Message</label>
+                            <br>
+                            <textarea rows="5" name="message" id="message" placeholder="Hi! Let's get in touch." required=""></textarea>
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                            <br>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                    
+                </form>
             </div>
         </div>
     </section>

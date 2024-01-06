@@ -197,13 +197,68 @@ hr {
 }
 
 .logo-container {
-    margin-left: 45%;
+    /* margin-left: 45%; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-container img{
     max-height: 30px;
     width: auto;
+    margin: 0 5px;
 }
+
+.email-form {
+    border-color: transparent;
+}
+
+div.form {
+    display: inline-block;
+}
+
+div.form-element-div {
+    text-align: center;
+    margin: auto;
+    font-size: 1.4vw;
+}
+
+textarea#message {
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    color: black;
+    resize: none;
+    max-width: 306px;
+}
+
+input {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    color: black;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Poppins", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+input[type=submit] {
+    background-color: white;
+    border: none;
+    padding: 4px 12px;
+    font-family: "Poppins", "Trebuchet MS", Helvetica, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    color: black;
+  }
 
 @media screen and (max-width: 600px) {
     .intro {
@@ -265,4 +320,9 @@ hr {
     .text-container-title {
         font-size: 7.0vw;;
     }
+
+    div.form-element-div {
+        font-size: 2.5vw;
+    }
+
 }
