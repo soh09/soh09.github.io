@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>So Hirota</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../assets/aboutme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src = '../script.js'></script>
 </head>
 <body>
     <section class = 'top-header'>
@@ -30,7 +33,55 @@
             <a href="contact.html">contact</a>
         </div>
     </div>
-<text>about me</text>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "left-text-container">
+                <h1 class = 'content-text'>I am a 3rd year student at the <a class = "highlight">University of California, San Diego</a>, where I study Data Science. I am actively seeking out opportunities to apply my technical skills to the real world. Currently, I'm involved in astrophysics research, where I am exploring machine learning methods of <a class = "highlight">discovering far away planets</a>. Check out <a href = '../assets/so_hirota_resume.pdf' target = '_blank'>my resume</a>.</h1>
+            </div>
+            <div class = "img-container">
+                <video id = "startrails-video" src="../assets/spedup_startrails.mp4" autoplay muted loop>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "img-container">
+                <img id = 'intro-image' src="../assets/menu.JPG">
+            </div>
+            <div class = "right-text-container">
+                <h1 class = "subsections-title">This <span class = 'day'>Summer</span></h1>
+                <h1 class = 'content-text'>This summer, I worked as a <a class = "highlight">Data Science intern</a> at menu, a Japanese food delivery company. I developed regression models for <a class = "highlight">delivery driver availability prediction</a>, and performed KPI analysis for the business development team. I learned how to work with a multi-disciplinary team, and found joy in it.</h1>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "left-text-container">
+                <h1 class = "subsections-title">Hobbies</h1>
+                <h1 class = 'content-text'>When I have free time, I like to read, ride my bike, brew coffee, listen to podcasts, and take photographs. I mainly read <a class = 'highlight'>Japanese classical literature</a>, by  Dazai Osamu, Natsume Soseki, and the like. Reading helps me take a break from my fast paced life and <a class = 'highlight'>"slow down time"</a>. Photography allows me to look at the world from fresh and unique perspectives.</h1>
+            </div>
+            <div class = "img-container">
+                <img id = "intro-image" src="../assets/cat.JPG">
+            </div>
+        </div>
+    </section>
+
+    <hr class = 'bottom'/>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     document.getElementById('startrails-video').play();
+        // });
+    </script>
     
 </body>
 </html>

@@ -6,6 +6,10 @@
     font-weight: 400;
 }
 
+html {
+    overflow-y: scroll;
+  }
+
 a.name {
     text-align: center;
     font-size: 1.7rem;
@@ -192,8 +196,12 @@ img#intro-image {
 hr {
     width: 80%;
     color: black;
-    size: 0.5px;
     margin-top: 90px;
+    border-width: 1px;
+}
+
+hr.bottom {
+    border-width: 0px;
 }
 
 .logo-container {

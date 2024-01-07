@@ -1,0 +1,80 @@
+
+h1.content-text {
+    text-align: center;
+    font-size: 1.4vw;
+    text-anchor: middle;
+    font-weight: 400;
+    white-space: pre-line;
+    line-height: 1.5em;
+}
+
+video {
+    max-width:70%;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1.subsections-title {
+    text-align: center;
+    font-weight: 500;
+}
+
+a:visited {
+    color: black;
+}
+
+a.highlight {
+    color: rgb(158, 157, 157);
+}
+
+.overlay a {
+    color: #818181;
+}
+
+@media screen and (max-width: 750px) {
+    .hamburger-menu {
+        visibility: visible;
+        position: absolute;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hp-subsections {
+        margin-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .right-text-container{
+        margin-top: 20px;
+        width: 70%;
+        margin-right: 0%;
+    }
+
+    .left-text-container{
+        margin-top: 20px;
+        width: 70%;
+        margin-left: 0%;
+    }
+    h1.content-text {
+        font-size: 2vw;
+    }
+    .text-container-title {
+        font-size: 7.0vw;;
+    }
+
+    div.form-element-div {
+        font-size: 2.5vw;
+    }
+
+}
