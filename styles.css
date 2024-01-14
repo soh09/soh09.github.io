@@ -222,27 +222,49 @@ hr.bottom {
 }
 
 div.form {
-    display: inline-block;
+    width: 35%;
+    box-sizing: border-box;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+div.form#message {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10 10px; /* Adjust the padding as needed */
 }
 
 div.form-element-div {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     margin: auto;
     font-size: 1.4vw;
+    justify-content: center;
+}
+
+#full-name, #email-address {
+    width: 80%;
+    max-width: 300px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
 
 textarea#message {
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border-style: solid;
     border-color: grey;
     border-width: 2px;
     color: black;
     resize: none;
-    max-width: 306px;
+    /* max-width: 80%; */
+    font-family: "Poppins", "Trebuchet MS", Helvetica, sans-serif;
 }
 
 input {
+    width: 100%;
+    max-width: 300px;
     border-radius: 5px;
     border-style: solid;
     border-color: grey;
@@ -250,9 +272,6 @@ input {
     color: black;
 }
 
-input::placeholder, textarea::placeholder {
-    font-family: "Poppins", "Trebuchet MS", Helvetica, sans-serif;
-}
 
 input[type=submit] {
     background-color: white;
@@ -266,6 +285,7 @@ input[type=submit] {
     border-color: grey;
     border-width: 2px;
     color: black;
+    max-width: 100px;
   }
 
 @media screen and (max-width: 600px) {
@@ -330,7 +350,7 @@ input[type=submit] {
     }
 
     div.form-element-div {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
 }
