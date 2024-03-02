@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>So Hirota</title>
     <link rel="stylesheet" href="styles.css" />
     <script src = 'script.js'></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="preload" href="../assets/spedup_startrails.mp4" as="video"/> -->
 </head>
 <body>
     <section class = 'top-header'>
@@ -14,7 +15,7 @@
         <section class = 'wide-sections'>
             <a class = 'section-text' style = 'left: 50px' href = 'sections/aboutme.html'>about me</a>
             <a class = 'section-text' style = 'left: 150px' href = 'sections/projects.html'>projects</a>
-            <a class = 'section-text' style = 'right: 150px' href = 'sections/astrophotography.html'>astrophotography</a>
+            <a class = 'section-text' style = 'right: 150px' href = 'sections/astrophotography.html'>(astro)photography</a>
             <a class = 'section-text' style = 'right: 50px' href = 'sections/contact.html'>contact</a>
         </section>
         <button class = 'hamburger-menu' onclick = 'expand_menu()'>
@@ -28,7 +29,7 @@
         <div class="overlay-content">
             <a href="sections/aboutme.html">about me</a>
             <a href="sections/projects.html">projects</a>
-            <a href="sections/astrophotgraphy.html">astrophotography</a>
+            <a href="sections/astrophotgraphy.html">(astro)photography</a>
             <a href="sections/contact.html">contact</a>
         </div>
     </div>
@@ -51,11 +52,11 @@
 
         <div class = "container" data-aos = "fade-up" data-aos-duration = "1000">
             <div class = "img-container">
-                <a href = "sections/projects.html"><img id = 'intro-image' src="assets/with_glove.JPG"></a>
+                <a href = "sections/projects.html"><img id = 'intro-image' src="assets/with_glove.png"></a>
             </div>
             <div class = "right-text-container">
                 <a href = "sections/projects.html"><h1 class = 'text-container-title'>projects</h1></a>
-                <h1 class = 'title-text'>I've done a variety of fun projects, from prototyping a sign language detection glove to coding an evolutionary algorithm to find the optimal neural network. Find out more <a href = 'sections/projects.html'>here</a>!</h1>
+                <h1 class = 'title-text'>I've done a variety of fun projects, from prototyping a sign language detection glove to coding an neuro-evolutionary algorithm to find the optimal neural network. Find out more <a href = 'sections/projects.html'>here</a>!</h1>
             </div>
         </div>
     </section>
@@ -78,6 +79,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+        var video = new Image();
+        video.src = '../assets/spedup_startrails.mp4';
     </script>
 </body>
 </html>
