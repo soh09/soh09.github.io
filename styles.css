@@ -298,6 +298,10 @@ input[type=submit] {
     max-width: 100px;
   }
 
+a {
+    color: black;
+}
+
 @media screen and (max-width: 600px) {
     .intro {
         padding-left: 7%;
@@ -310,6 +314,9 @@ input[type=submit] {
 
 
 @media screen and (max-width: 850px) {
+    a {
+        color: black;
+    }
     a.name {
         font-size: 7.5vw;
     }

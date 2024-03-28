@@ -83,4 +83,8 @@ a.highlight {
         font-size: 2.5vw;
     }
 
+    a:visited {
+        color: black !important; 
+    }
+
 }
