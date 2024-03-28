@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>So Hirota</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../assets/aboutme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src = '../script.js'></script>
 </head>
 <body>
     <section class = 'top-header'>
@@ -12,7 +15,7 @@
         <section class = 'wide-sections'>
             <a class = 'section-text' style = 'left: 50px' href = 'aboutme.html'>about me</a>
             <a class = 'section-text' style = 'left: 150px' href = 'projects.html'>projects</a>
-            <a class = 'section-text' style = 'right: 150px' href = 'astrophotography.html'>astrophotography</a>
+            <a class = 'section-text' style = 'right: 150px' href = 'astrophotography.html'>(astro)photography</a>
             <a class = 'section-text' style = 'right: 50px' href = 'contact.html'>contact</a>
         </section>
         <button class = 'hamburger-menu' onclick = 'expand_menu()'>
@@ -26,14 +29,165 @@
         <div class="overlay-content">
             <a href="aboutme.html">about me</a>
             <a href="projects.html">projects</a>
-            <a href="astrophotgraphy.html">astrophotography</a>
+            <a href="astrophotgraphy.html">(astro)photography</a>
             <a href="contact.html">contact</a>
         </div>
     </div>
-<text>projects</text>
-<text>d3 frc map</text>
-<text>asl glove</text>
 
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "left-text-container">
+                <h1 class = 'content-text'>Projects are an <a class = 'highlight'>outlet</a> for my <a class = 'highlight'>creativity, technical skill, and passion.</a> I am always looking for new project ideas and inspiration.<br>Current work in progress: Beating 2048 With NueroEvolutionary AI</h1>
+            </div>
+            <div class = "img-container">
+                <img id = "intro-image" src="../assets/IMG_3846.png"></img>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "img-container">
+                <img id = "intro-image" src="../assets/2048_AI.png">
+            </div>
+            <div class = "right-text-container">
+                <h1 class = "subsections-title">
+                    <a href = "https://github.com/soh09/2048_NEAT">Beating 2048 With NueroEvolutionary AI
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 128 128">
+                            <path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+                        </svg>
+                    </a>
+                </h1>
+                <h1 class = "subsections-subtitle" style = "margin-bottom: -10px; margin-top: -14px;">November 2023 - Current<br>Tech: Python, Neural Networks, Evolutionary Algorithm</h1>
+                <h1 class = 'content-text'>I am writing a custom implementation of the NEAT (Neural Evolution of Augmenting Topologies) Algorithm, with the end goal of evolving a network capable of playing the 2048 game. I am currently implementing the logic for the NEAT Algorithm, alongside a fully custom implementation of neural networks.</h1>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "left-text-container">
+                <h1 class = "subsections-title">
+                    <a href = "https://soh09.github.io">This Website 🖥️
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 128 128">
+                            <path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+                        </svg>
+                    </a>
+                </h1>
+                <h1 class = "subsections-subtitle" style = "margin-bottom: -10px; margin-top: -14px;">July 2023 - March 2023<br>Tech: HTML, CSS, Javascript</h1>
+                <h1 class = 'content-text'>I am developing my website as a place where people can learn about me, my projects, and my passion. The designing is all done by me; I hope you're enjoying your stay!</h1>
+            </div>
+            <div class = "img-container">
+                <img id = 'intro-image' src="../assets/website.png">
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "img-container">
+                <img id = 'intro-image' src="../assets/rpl_sim_output.png">
+            </div>
+            <div class = "right-text-container">
+                    <h1 class = "subsections-title">
+                        <a href = "https://github.com/soh09/2048_NEAT">Rocket Position Simulator 🚀 
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 128 128">
+                                <path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+                            </svg>
+                        </a>
+                    </h1>
+                </a>
+                <h1 class = "subsections-subtitle" style = "margin-bottom: -10px; margin-top: -14px;">October 2023 - March 2024, Rocket Propulsion Lab<br>Tech: C++, Boost (ODEInt), Git, Catch2</h1>
+                <h1 class = 'content-text'>I developed software to simulate the position of a liquid propellant rocket. It uses predefined systems of equations that describes the trajectory of the rocket in its various phases of deployment.</h1>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "left-text-container">
+                <h1 class = "subsections-title">
+                    <a href = "https://soh09.github.io/frc-dataviz">FRC Data Visualization 📊
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 128 128">
+                            <path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+                        </svg>
+                    </a>
+                </h1>
+                <h1 class = "subsections-subtitle" style = "margin-bottom: -10px; margin-top: -14px;">June 2023<br>Tech: D3.js, Javascript, Python, Pandas</h1>
+                <h1 class = 'content-text'>I created a data visualization website for FIRST Robotics Competition team matchup data using D3.js. The library enabled my website to have rich interactivity, such as sorting, panning, zooming, and searching.</h1>
+            </div>
+            <div class = "img-container">
+                <img id = "intro-image"  style = "border-color: black; border-width: 2px; border-style: solid;" src="../assets/frc_dataviz.png">
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "img-container">
+                <img id = 'intro-image' src="../assets/glove.jpg">
+            </div>
+            <div class = "right-text-container">
+                <h1 class = "subsections-title">
+                    <a href = "https://github.com/GioByte10/American-Sign-Language-Glove">American Sign Language Glove 🧤
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 128 128">
+                            <path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+                        </svg>
+                    </a>
+                </h1>
+                <h1 class = "subsections-subtitle" style = "margin-bottom: -10px; margin-top: -14px;">June 15th, 2024, HardHack Hackathon<br>Tech: Python, SKLearn, Arduino</h1>
+                <h1 class = 'content-text'>Our team developed a glove that could detect American Sign Language alphabets. We utilize flex sensors on each of the fingers to measure the amount of bending, and trained a K-Nearest Neighbor Classifier to perform the prediction.</h1>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class = "hp-subsections">
+        <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
+            <div class = "left-text-container">
+                <h1 class = "subsections-title">
+                    <a href = "https://github.com/jasminelo2020/shazam2.0">Shazam 2.0 🎧
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 128 128">
+                            <path d="M 84 11 C 82.3 11 81 12.3 81 14 C 81 15.7 82.3 17 84 17 L 106.80078 17 L 60.400391 63.400391 C 59.200391 64.600391 59.200391 66.499609 60.400391 67.599609 C 61.000391 68.199609 61.8 68.5 62.5 68.5 C 63.2 68.5 63.999609 68.199609 64.599609 67.599609 L 111 21.199219 L 111 44 C 111 45.7 112.3 47 114 47 C 115.7 47 117 45.7 117 44 L 117 14 C 117 12.3 115.7 11 114 11 L 84 11 z M 24 31 C 16.8 31 11 36.8 11 44 L 11 104 C 11 111.2 16.8 117 24 117 L 84 117 C 91.2 117 97 111.2 97 104 L 97 59 C 97 57.3 95.7 56 94 56 C 92.3 56 91 57.3 91 59 L 91 104 C 91 107.9 87.9 111 84 111 L 24 111 C 20.1 111 17 107.9 17 104 L 17 44 C 17 40.1 20.1 37 24 37 L 69 37 C 70.7 37 72 35.7 72 34 C 72 32.3 70.7 31 69 31 L 24 31 z"></path>
+                        </svg>
+                    </a>
+                </h1>
+                <h1 class = "subsections-subtitle" style = "margin-bottom: -10px; margin-top: -14px;">December 2022 - June 2023, DataSci Student Society<br>Tech: Python, PyTorch, AWS</h1>
+                <h1 class = 'content-text'>We created a music genre classifier that could classify the genre using snippets of songs in a similar fashion to the popular Shazam service. We utilized the Million Song Dataset, and trained the classifier on timbre and pitch, which are derivative features of the raw audio of songs. Click <a href = "https://github.com/jasminelo2020/shazam2.0/blob/main/shazam2.0-poster.pdf">here</a> to see the poster.</h1>
+            </div>
+            <div class = "img-container">
+                <img id = "intro-image" src="../assets/shazam.jpg">
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+
+    <hr class = 'bottom'/>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     document.getElementById('startrails-video').play();
+        // });
+    </script>
     
 </body>
 </html>

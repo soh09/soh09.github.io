@@ -93,7 +93,7 @@ section.wide-sections {
 .overlay a {
     padding: 20px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 2rem;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -338,7 +338,7 @@ input[type=submit] {
     }
 
     .hp-subsections {
-        margin-top: 60px;
+        margin-top: 30px;
         padding-left: 0px;
         padding-right: 0px;
     }

@@ -21,6 +21,12 @@ h1.subsections-title {
     font-weight: 500;
 }
 
+h1.subsections-subtitle {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
 a:visited {
     color: black;
 }
@@ -67,7 +73,7 @@ a.highlight {
         margin-left: 0%;
     }
     h1.content-text {
-        font-size: 2vw;
+        font-size: 4vw;
     }
     .text-container-title {
         font-size: 7.0vw;;
