@@ -94,7 +94,7 @@ section.wide-sections {
     padding: 20px;
     text-decoration: none;
     font-size: 2rem;
-    color: #818181;
+    color: #818181 !important;
     display: block;
     transition: 0.3s;
 }
