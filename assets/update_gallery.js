@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let screenWidth = 0;
     function updateGalleryLayout() {
         let screenWidth = document.documentElement.clientWidth;
         console.log(screenWidth);
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         gallery.innerHTML = ''; // Clear existing content
 
-        if (screenWidth < 400) {
+        if (screenWidth < 500) {
             console.log('screen small');
             gallery.style.setProperty('grid-template-columns', 'repeat(1, minmax(0px, 1fr))');
             // Single column layout
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cols.push(galleryColumn);
 
             gallery.appendChild(galleryColumn);
-        } else if (screenWidth <= 700) {
+        } else if (screenWidth <= 1000) {
             console.log('screen mid');
             gallery.style.setProperty('grid-template-columns', 'repeat(2, minmax(0px, 1fr))');
             
@@ -159,6 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial call to set up the gallery layout
     updateGalleryLayout();
 
-    // Update gallery layout whenever the window is resized
-    window.addEventListener('resize', updateGalleryLayout);
+    // // Update gallery layout whenever the window is resized
+    window.addEventListener('resize', function() {
+        if(screenWidth !== document.documentElement.clientWidth){ 
+            updateGalleryLayout();
+        }
+    });
 });
