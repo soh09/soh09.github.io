@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         gallery.innerHTML = ''; // Clear existing content
 
-        if (screenWidth < 350) {
+        if (screenWidth < 400) {
             console.log('screen small');
             gallery.style.setProperty('grid-template-columns', 'repeat(1, minmax(0px, 1fr))');
             // Single column layout
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(cols);
 
         let image_fps = [
+            ["../assets/photography/r1_milkyway.JPG", "\"The Milkyway\"<br>📍SDSU Observatory,<br>Julian, CA"],
             ["../assets/photography/r1_towards_baybridge.JPG", "\"Towards Bay Bridge\"<br>📍California St,<br>San Francisco, CA"],
             ["../assets/photography/r1_chinatown_pacific.JPG", "\"Towards the Pacific\"<br>📍California St,<br>San Francisco, CA"],
             ["../assets/photography/r2_plastic_lens.JPG", "📍Gliderport,<br>San Diego, CA<br>shot with a disposable lens"],
@@ -69,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ["../assets/photography/r1_blue_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
             ["../assets/photography/r1_purple_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
             ["../assets/photography/r1_blue_circle_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
+            ["../assets/photography/r1_spider_lily.JPG", "\"Spider Lily\"<br>📍Ibaraki, Japan"],
             ["../assets/photography/r2_me_with_ethan.JPG", "Tone River banks<br>📍Ibaraki, Japan"],
             ["../assets/photography/r2_bamboo_forest.JPG", "Bamboo Forest<br>📍Kyoto, Japan"],
             ["../assets/photography/r1_skytree.JPG", "Tokyo Skytree<br>📍Asakusa, Tokyo"],
