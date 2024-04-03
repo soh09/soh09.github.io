@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let screenWidth = 0;
+    let screenWidth = document.documentElement.clientWidth;
     function updateGalleryLayout() {
         let screenWidth = document.documentElement.clientWidth;
         console.log(screenWidth);
@@ -162,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // // Update gallery layout whenever the window is resized
     window.addEventListener('resize', function() {
+        console.log(screenWidth);
         if(screenWidth !== document.documentElement.clientWidth){ 
             updateGalleryLayout();
         }
