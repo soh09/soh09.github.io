@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src = 'script.js'></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.svg">
 </head>
 <body>
     <section class = 'top-header'>
@@ -28,7 +29,7 @@
         <div class="overlay-content">
             <a href="sections/aboutme.html">about me</a>
             <a href="sections/projects.html">projects</a>
-            <a href="sections/astrophotgraphy.html">(astro)photography</a>
+            <a href="sections/astrophotography.html">(astro)photography</a>
             <a href="sections/contact.html">contact</a>
         </div>
     </div>
@@ -39,7 +40,7 @@
                 <h1 class = 'title-text'>I am a data scientist, space nerd, student, astrophotographer, tech enthusiast.<br>By <span class = 'day'>day</span>, I delve into my books;<br>by <span class = 'night'>night</span>, I gaze up at the stars.<br>One day, I hope to set afoot on our companion, <span class = 'grey'>the Moon.</span></h1>
             </div>
             <div class = "img-container">
-                <img id = 'intro-image' src="assets/earthrise.jpeg">
+                <img id = 'intro-image' src="assets/landing_page/earthrise.jpeg">
             </div>
         </div>
     </section>
@@ -49,7 +50,7 @@
 
         <div class = "container" data-aos = "fade-up" data-aos-duration = "1000">
             <div class = "img-container">
-                <a href = "sections/projects.html"><img id = 'intro-image' src="assets/with_glove.png"></a>
+                <a href = "sections/projects.html"><img id = 'intro-image' src="assets/landing_page/with_glove.png"></a>
             </div>
             <div class = "right-text-container">
                 <a href = "sections/projects.html" style = "color: black;"><h1 class = 'text-container-title'>projects</h1></a>
@@ -67,7 +68,7 @@
                 <h1 class = 'title-text'>My name is So Hirota.<br>I'm a student at the<br>University of California - San Diego, majoring in Data Science. <br><a href = 'assets/so_hirota_resume.pdf' target = '_blank' style = "color: black">Click</a> to see my resume.</h1>
             </div>
             <div class = "img-container">
-                <a href = "sections/aboutme.html"><img id = 'intro-image' src="assets/chinatown 3.jpg"></a>
+                <a href = "sections/aboutme.html"><img loading = "lazy" id = 'intro-image' src="assets/landing_page/kiyomizu-2.JPG"></a>
             </div>
         </div>
     </section>
@@ -76,11 +77,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-
-    <script>
-        var video = new Image();
-        video.src = '../assets/spedup_startrails.mp4';
     </script>
 </body>
 </html>

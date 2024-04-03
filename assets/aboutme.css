@@ -8,14 +8,6 @@ h1.content-text {
     line-height: 1.5em;
 }
 
-video {
-    max-width:70%;
-    border-radius: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 h1.subsections-title {
     text-align: center;
     font-weight: 500;

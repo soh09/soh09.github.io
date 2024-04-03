@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/aboutme.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src = '../script.js'></script>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
 </head>
 <body>
     <section class = 'top-header'>
@@ -29,7 +30,7 @@
         <div class="overlay-content">
             <a href="aboutme.html">about me</a>
             <a href="projects.html">projects</a>
-            <a href="astrophotgraphy.html">(astro)photography</a>
+            <a href="astrophotography.html">(astro)photography</a>
             <a href="contact.html">contact</a>
         </div>
     </div>
@@ -40,7 +41,7 @@
                 <h1 class = 'content-text'>Projects are an <a class = 'highlight'>outlet</a> for my <a class = 'highlight'>creativity, technical skill, and passion.</a> I am always looking for new project ideas and inspiration.<br>Current work in progress: Beating 2048 With NueroEvolutionary AI</h1>
             </div>
             <div class = "img-container">
-                <img id = "intro-image" src="../assets/IMG_3846.png"></img>
+                <img id = "intro-image" src="../assets/projects/deadline_warriors.png"></img>
             </div>
         </div>
     </section>
@@ -50,7 +51,7 @@
     <section class = "hp-subsections">
         <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
             <div class = "img-container">
-                <img id = "intro-image" src="../assets/2048_AI.png">
+                <img id = "intro-image" src="../assets/projects/2048_AI.png">
             </div>
             <div class = "right-text-container">
                 <h1 class = "subsections-title">
@@ -82,7 +83,7 @@
                 <h1 class = 'content-text'>I am developing my website as a place where people can learn about me, my projects, and my passion. The designing is all done by me; I hope you're enjoying your stay!</h1>
             </div>
             <div class = "img-container">
-                <img id = 'intro-image' src="../assets/website.png">
+                <img id = 'intro-image' src="../assets/projects/website.png">
             </div>
         </div>
     </section>
@@ -94,7 +95,7 @@
     <section class = "hp-subsections">
         <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
             <div class = "img-container">
-                <img id = 'intro-image' src="../assets/rpl_sim_output.png">
+                <img id = 'intro-image' src="../assets/projects/rpl_sim_output.png">
             </div>
             <div class = "right-text-container">
                     <h1 class = "subsections-title">
@@ -129,7 +130,7 @@
                 <h1 class = 'content-text'>I created a data visualization website for FIRST Robotics Competition team matchup data using D3.js. The library enabled my website to have rich interactivity, such as sorting, panning, zooming, and searching.</h1>
             </div>
             <div class = "img-container">
-                <img id = "intro-image"  style = "border-color: black; border-width: 2px; border-style: solid;" src="../assets/frc_dataviz.png">
+                <img id = "intro-image" class = "lazy" style = "border-color: black; border-width: 2px; border-style: solid;" data-src="../assets/projects/frc_dataviz.gif" src="../assets/projects/frc_dataviz.png">
             </div>
         </div>
     </section>
@@ -139,7 +140,7 @@
     <section class = "hp-subsections">
         <div class = "container" data-aos = "fade-up" data-aos-duration = "1000" id = "aboutme-container">
             <div class = "img-container">
-                <img id = 'intro-image' src="../assets/glove.jpg">
+                <img id = 'intro-image' src="../assets/projects/glove.jpg">
             </div>
             <div class = "right-text-container">
                 <h1 class = "subsections-title">
@@ -171,7 +172,7 @@
                 <h1 class = 'content-text'>We created a music genre classifier that could classify the genre using snippets of songs in a similar fashion to the popular Shazam service. We utilized the Million Song Dataset, and trained the classifier on timbre and pitch, which are derivative features of the raw audio of songs. Click <a href = "https://github.com/jasminelo2020/shazam2.0/blob/main/shazam2.0-poster.pdf" style = "color: black;" target = '_blank'>here</a> to see the poster.</h1>
             </div>
             <div class = "img-container">
-                <img id = "intro-image" src="../assets/shazam.jpg">
+                <img id = "intro-image" src="../assets/projects/shazam.jpg">
             </div>
         </div>
     </section>
@@ -187,6 +188,35 @@
         // document.addEventListener('DOMContentLoaded', function () {
         //     document.getElementById('startrails-video').play();
         // });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
+    
+            if ("IntersectionObserver" in window) {
+                var lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            var lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+    
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Fallback for browsers that do not support IntersectionObserver
+                // In this case, load all images immediately
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove("lazy");
+                });
+            }
+        });
     </script>
     
 </body>

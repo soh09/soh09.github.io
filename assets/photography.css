@@ -1,0 +1,103 @@
+div.img-overlay {
+    opacity: 0; 
+    transition: opacity 0.2s ease; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 3%;
+    position: absolute;
+    width: 70%;
+    height: 100%; 
+    top: 0px;
+}
+
+div.gallery-photo-overlay {
+    opacity: 0; 
+    transition: opacity 0.2s ease; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    opacity: 1;
+    transition: .2s ease;
+}
+
+.img-wrapper {
+    border-radius: 3%;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 70%;
+}
+
+.img-wrapper:hover .img-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.gallery-photo:hover .gallery-photo-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-anchor: middle;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    gap: 32px;
+    align-items: start;
+}
+
+.gallery-col {
+    display: grid;
+    row-gap: 32px;
+    grid-template-columns: minmax(0px, 1fr);
+}
+
+.gallery-photo {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove any default inline styling on the image */
+}
+
+.hp-subsections {
+    padding-left: calc(15% + 10px);
+    padding-right: calc(15% + 10px);
+}
+
+@media screen and (max-width: 850px) {
+    .overlay-text {
+        font-size: 2vw;
+    }
+    .hp-subsections {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}

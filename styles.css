@@ -143,6 +143,7 @@ section.wide-sections {
 .img-container{
     /* justify-content: center; */
     width: 60%;
+    position: relative;
 }
 
 .right-text-container{
