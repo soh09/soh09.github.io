@@ -178,6 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('touch detected')
             const overlay = galleryPhoto.querySelector('.gallery-photo-overlay');
             overlay.style.opacity = overlay.style.opacity === '1' ? '0' : '1';
-        });
+        }, {passive: false});
     });
 });
