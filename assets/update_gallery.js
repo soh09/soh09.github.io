@@ -166,3 +166,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryPhotos = document.querySelectorAll('.gallery-photo');
+
+    galleryPhotos.forEach(function(galleryPhoto) {
+        // Attach a touchstart event listener to each gallery photo
+        galleryPhoto.addEventListener('touchstart', function() {
+            // Toggle the visibility of the overlay
+            console.log('touch detected')
+            const overlay = galleryPhoto.querySelector('.gallery-photo-overlay');
+            overlay.style.opacity = overlay.style.opacity === '1' ? '0' : '1';
+        });
+    });
+});
