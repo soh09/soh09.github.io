@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 cols.push(galleryColumn);
                 gallery.appendChild(galleryColumn);
             }
-        } else if (screenWidth <= 1500) {
+        } else if (screenWidth <= 2500) {
             console.log('screen big');
             gallery.style.setProperty('grid-template-columns', 'repeat(3, minmax(0px, 1fr))');
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ["../assets/photography/r2_plastic_lens.JPG", "📍Gliderport,<br>San Diego, CA<br>shot with a disposable lens"],
             ["../assets/photography/r2_national_masjid.JPG", "National Masjid<br>📍Kuala Lumpur, Malaysia"],
             ["../assets/photography/r1_putra_masjid.JPG", "📍Putra Masjid,<br>Putrajaya, Malaysia"],
-            ["../assets/photography/r1_merdeka_with_masjid.JPG", "Sultan Abdul Samad Building,<br>📍Kuala Lumpur, Malaysia"],
+            ["../assets/photography/r1_merdeka_with_masjid.JPG", "Sultan Abdul Samad Building<br>📍Kuala Lumpur, Malaysia"],
             ["../assets/photography/r1_cat.JPG", "📍Subang Jaya,<br>Selangor, Malaysia"],
             ["../assets/photography/r2_bamboo_everyone.JPG", "Bamboo Forest<br>📍Kyoto, Japan"],
             ["../assets/photography/r1_blue_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
             ["../assets/photography/r2_me_with_ethan.JPG", "Tone River banks<br>📍Ibaraki, Japan"],
             ["../assets/photography/r2_bamboo_forest.JPG", "Bamboo Forest<br>📍Kyoto, Japan"],
             ["../assets/photography/r1_skytree.JPG", "Tokyo Skytree<br>📍Asakusa, Tokyo"],
-            ["../assets/photography/r1_jiji.JPG", "\"Grandpa\"<br>📍Little Italy,<br>San Diego, CA"]
+            ["../assets/photography/r1_jiji.JPG", "\"Grandpa\"<br>📍Little Italy,<br>San Diego, CA"],
+            ["../assets/photography/r1_colorful_sunset.JPG", "📍Tierra del Sol,<br>San Diego, CA"]
         ]
         
         // // in order insertion
@@ -113,9 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             return shortestCol;
         }
-
-
-
 
 
         for (const image_fp_desc of image_fps) {
