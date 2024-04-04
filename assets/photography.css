@@ -48,6 +48,10 @@ div.gallery-photo-overlay {
     opacity: 1; /* Show overlay on hover */
 }
 
+.gallery-photo:active .gallery-photo-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
 .overlay-text {
     color: white;
     font-size: 1.3vw;
@@ -58,7 +62,7 @@ div.gallery-photo-overlay {
     left: 0;
     right: 0;
     text-align: center;
-}
+} 
 
 .gallery {
     display: grid;
@@ -94,7 +98,7 @@ div.gallery-photo-overlay {
 
 @media screen and (max-width: 850px) {
     .overlay-text {
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
     .hp-subsections {
         padding-right: 15%;
