@@ -11,6 +11,7 @@ h1.content-text {
 h1.subsections-title {
     text-align: center;
     font-weight: 500;
+    font-size: 1.8vw;
 }
 
 h1.subsections-subtitle {
@@ -29,6 +30,17 @@ a.highlight {
 
 .overlay a {
     color: #818181;
+}
+
+a.ft {
+    /* background: linear-gradient(90deg, #FF0635, #91B9FF);*/
+    background: linear-gradient(90deg, #FF0635, rgb(64, 126, 246));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.menu {
+    color: rgb(229, 25, 25);
 }
 
 @media screen and (max-width: 750px) {
@@ -80,3 +92,9 @@ a.highlight {
     }
 
 }
+
+/* #DDEAFF light blue
+#91B9FF dark blue
+
+#72DBD5 teal
+#FF0635 orange */
