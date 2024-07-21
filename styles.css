@@ -303,6 +303,12 @@ a {
     color: black;
 }
 
+h1.subsections-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8vw;
+}
+
 @media screen and (max-width: 600px) {
     .intro {
         padding-left: 7%;
@@ -373,6 +379,9 @@ a {
 
     div.form-element-div {
         font-size: 3.5vw;
+    }
+    h1.subsections-title {
+        font-size: 1.5em;
     }
 
 }
