@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(cols);
 
         let image_fps = [
+            ["../assets/photography/r2_tsuchinshan.jpeg", "\"The Comet\"<br>📍Crater Lake,<br>Oregon"],
             ["../assets/photography/r1_milkyway.JPG", "\"The Milkyway\"<br>📍SDSU Observatory,<br>Julian, CA"],
             ["../assets/photography/r1_towards_baybridge.JPG", "\"Towards Bay Bridge\"<br>📍California St,<br>San Francisco, CA"],
             ["../assets/photography/r1_chinatown_pacific.JPG", "\"Towards the Pacific\"<br>📍California St,<br>San Francisco, CA"],
