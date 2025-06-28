@@ -24,6 +24,15 @@ a.highlight {
     color: rgb(158, 157, 157);
 }
 
+a.jpl {
+    color: rgb(209, 64, 54);
+}
+
+
+a.stanford {
+    color: #B83A4B;
+}
+
 .overlay a {
     color: #818181;
 }
