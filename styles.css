@@ -137,7 +137,6 @@ section.wide-sections {
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .img-container{
@@ -203,6 +202,7 @@ hr {
 
 hr.bottom {
     border-width: 0px;
+    margin-top: 10px;
 }
 
 .logo-container {
@@ -307,6 +307,14 @@ h1.subsections-title {
     text-align: center;
     font-weight: 500;
     font-size: 1.8vw;
+}
+
+h3.disclaimer-text {
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 300;
+    padding-top: 30px;
+    margin: 0;
 }
 
 @media screen and (max-width: 600px) {
