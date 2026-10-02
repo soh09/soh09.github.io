@@ -1,2 +1,2 @@
 # soh09.github.io
-My Personal Website
+Check it out at [https://soh09.github.io]
