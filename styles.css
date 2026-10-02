@@ -177,7 +177,11 @@ span.grey {
 }
 
 span.day {
-    color: rgb(255, 157, 0);
+    color: rgb(255, 166, 0);
+}
+
+span.fall {
+    color: rgb(255, 51, 0);
 }
 
 span.night {

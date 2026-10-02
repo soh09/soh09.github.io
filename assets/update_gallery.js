@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(cols);
 
         let image_fps = [
+            ["../assets/photography/beachsun.jpg", "Pfiffer State Beach<br>📍Big Sur, California"],
+            ["../assets/photography/pfiffer_godrays.jpg", "God Rays<br>📍Big Sur, California"],
+            ["../assets/photography/coastline.jpg", "📍Big Sur, California"],
+            ["../assets/photography/water.jpg", "\"Tourquoise\"<br>📍Big Sur, California"],
+            ["../assets/photography/intotheunknown.jpg", "\"Unknown\"<br>📍Big Sur,<br>California"],
             ["../assets/photography/r2_tsuchinshan.jpeg", "\"The Comet\"<br>📍Crater Lake,<br>Oregon"],
             ["../assets/photography/r1_milkyway.JPG", "\"The Milkyway\"<br>📍SDSU Observatory,<br>Julian, CA"],
             ["../assets/photography/r1_towards_baybridge.JPG", "\"Towards Bay Bridge\"<br>📍California St,<br>San Francisco, CA"],
@@ -69,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
             ["../assets/photography/r1_merdeka_with_masjid.JPG", "Sultan Abdul Samad Building<br>📍Kuala Lumpur, Malaysia"],
             ["../assets/photography/r1_cat.JPG", "📍Subang Jaya,<br>Selangor, Malaysia"],
             ["../assets/photography/r2_bamboo_everyone.JPG", "Bamboo Forest<br>📍Kyoto, Japan"],
-            ["../assets/photography/r1_blue_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
             ["../assets/photography/r1_purple_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
             ["../assets/photography/r1_blue_circle_firework.JPG", "Tone River Firework Festival<br>📍Ibaraki, Japan"],
             ["../assets/photography/r1_spider_lily.JPG", "\"Spider Lily\"<br>📍Ibaraki, Japan"],

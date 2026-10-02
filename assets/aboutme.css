@@ -38,10 +38,23 @@ a.stanford {
 }
 
 a.ft {
-    /* background: linear-gradient(90deg, #FF0635, #91B9FF);*/
     background: linear-gradient(90deg, #FF0635, rgb(64, 126, 246));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+a.relativity {
+    background: linear-gradient(90deg, rgb(101, 132, 219), rgb(31, 27, 236));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.linkedin {
+    color: rgb(45, 100, 188);
+}
+
+a.temporal {
+    color: rgb(102, 60, 219)
 }
 
 a.menu {
